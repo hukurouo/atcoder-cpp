@@ -8,6 +8,7 @@ vector<int> v;
 vector<vector<int>> vec(n);
 vector<vector<int>> vec(10010, v);
 ソート : sort(vec.begin(), vec.end());
+sort(A, A + n, greater<long long>());
 範囲for文 : for (int x : a) {cout << x << endl;}
 auto : for (auto p : a) {auto key = p.first; auto value = p.second; }
 先頭n件抽出 : vec.resize(n)
