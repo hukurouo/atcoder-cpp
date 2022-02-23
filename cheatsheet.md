@@ -21,7 +21,7 @@ map<int,int> map;
 queue<int> queue; queue.front();
 priority_queue<int> pq; pq.top();
 priority_queue<int, vector<int>, greater<int>>
-set<int> set; // 重複の無いデータのまとまりを扱う
+set<int> set; // setに属する x より大きい要素のうち最小の要素を取得できる
 
 # define
 #define rep(i, a, b) for (int i = a; i < b; i++)
