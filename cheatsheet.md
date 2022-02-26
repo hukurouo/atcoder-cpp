@@ -13,6 +13,9 @@ sort(A, A + n, greater<long long>());
 auto : for (auto p : a) {auto key = p.first; auto value = p.second; }
 先頭n件抽出 : vec.resize(n)
 連結 : list.insert(list.end(), d.begin(), d.end());
+int idx = lower_bound(v.begin(), v.end(), x) - v.begin();
+v.insert(v.begin() + idx, x);
+削除 : v.erase(v.begin() + idx);
 
 # コンテナ
 // https://atcoder.jp/contests/apg4b/tasks/APG4b_aa
@@ -20,7 +23,7 @@ map<int,int> map;
 所属判定 : map.count(key); // map[key]でアクセスすると0で初期化される
 queue<int> queue; queue.front();
 priority_queue<int> pq; pq.top();
-priority_queue<int, vector<int>, greater<int>>
+priority_queue<int, vector<int>, greater<int>> 小さい順
 set<int> set; // setに属する x より大きい要素のうち最小の要素を取得できる
 
 # define
