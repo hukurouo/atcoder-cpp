@@ -16,6 +16,7 @@ auto : for (auto p : a) {auto key = p.first; auto value = p.second; }
 int idx = lower_bound(v.begin(), v.end(), x) - v.begin();
 v.insert(v.begin() + idx, x);
 削除 : v.erase(v.begin() + idx);
+二分探索 : upper_bound(x) xより大きい lower_bound(x) x以上
 
 # コンテナ
 // https://atcoder.jp/contests/apg4b/tasks/APG4b_aa
