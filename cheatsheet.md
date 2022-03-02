@@ -26,6 +26,7 @@ queue<int> queue; queue.front();
 priority_queue<int> pq; pq.top();
 priority_queue<int, vector<int>, greater<int>> 小さい順
 set<int> set; // setに属する x より大きい要素のうち最小の要素を取得できる
+auto it = set.lower_bound(x); it != set.end();
 
 # define
 #define rep(i, a, b) for (int i = a; i < b; i++)
