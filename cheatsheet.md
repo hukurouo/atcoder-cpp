@@ -9,6 +9,7 @@ vector<vector<int>> vec(n);
 vector<vector<int>> vec(10010, v);
 ソート : sort(vec.begin(), vec.end());
 sort(A, A + n, greater<long long>());
+削除 : vec.erase(vec.begin() + idx);
 using P = pair<int, int>;
 sort(v.begin(), v.end(), [](P& a, P& b) { return a.second < b.second; });
 範囲for文 : for (int x : a) {cout << x << endl;}
