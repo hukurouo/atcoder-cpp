@@ -2,6 +2,7 @@
 行単位での入力 : getline(cin, s); // 変数sで入力を一行受け取る
 出力桁数の指定 : printf("%.6f", sqrt(x));
 改行 : printf("\n");
+cout << setprecision(20);
 
 # 配列
 vector<int> v;
